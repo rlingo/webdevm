@@ -15,7 +15,7 @@ if (isset($_POST['submit'])) {
     if ($result->num_rows > 0) {
         // Valid login; you can redirect to a welcome page or set a session variable
         $_POST['username'] = $username;
-        header("Location: Models.php"); // Replace with your welcome page
+        header("Location: branch.php"); // Replace with your welcome page
         exit();
     } else {
         // Invalid login; display an error message
